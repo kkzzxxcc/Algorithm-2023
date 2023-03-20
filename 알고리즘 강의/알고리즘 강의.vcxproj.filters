@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="3월 7일 알고리즘 최대값 찾기.c">
+    <ClCompile Include="3월 13일 알고리즘 동전찾기.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="3월 13일 알고리즘 동전찾기.c">
+    <ClCompile Include="3월 20일 알고리즘.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

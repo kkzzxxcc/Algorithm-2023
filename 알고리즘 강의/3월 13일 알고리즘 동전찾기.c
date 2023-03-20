@@ -12,7 +12,7 @@
 
 // struct Nconin calculcoins { struct Ncount ret; ............ return 0; }
 
- 
+
 
 
 #include <stdio.h>

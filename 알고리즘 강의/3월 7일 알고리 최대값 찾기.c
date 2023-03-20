@@ -1,3 +1,8 @@
+// 3월 7일 알고리즘 실습
+// 201911079 이동근
+// 
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
