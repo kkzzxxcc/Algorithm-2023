@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="3월 20일 알고리즘 유클리드.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="4월 4일 화요일 알고리즘 유클리드.c">
+    <ClCompile Include="ㅁㄴㅇ.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
