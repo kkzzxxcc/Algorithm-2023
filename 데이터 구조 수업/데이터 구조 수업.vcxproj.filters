@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="4월 6일 데이터구조 4장 미로.c">
+    <ClCompile Include="4월 13일 목 데이터구조 5장 예제5.9.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

@@ -6,7 +6,7 @@
 #include <time.h>
 #include "euclid.h"
 
-#define N 1000
+#define N 100000
 
 int testEuclid()  // 재귀적 알고리즘으로 출력하는 최대공약수 알고리즘 함수
 {
@@ -57,6 +57,7 @@ int check_time()
 
     // N개의 테스트 케이스 생성
     srand((unsigned int)time(NULL));
+
     for (i = 0; i < N; i++) 
     {
         a[i] = rand();
