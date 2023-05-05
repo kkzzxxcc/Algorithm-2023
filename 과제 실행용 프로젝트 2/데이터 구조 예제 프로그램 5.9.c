@@ -3,12 +3,22 @@
 // 4월 11일 데이터구조 수업
 // 19학번 2학년 이동근
 // 5장 포인터와 연결리스트
-// 학생 정보 큐 테스트 프로그램 예제 5.9
+// 연결된 스택 테스트 프로그램 예제 5.9
+// 학생 정보 큐 테스트 프로그램
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-typedef int Element;
+typedef struct Student
+{
+	int id;
+	char name[32];
+	char dept[32];
+} Student;
+
+typedef Student Element;
+
 typedef struct LinkedNode
 {
 	Element data;                            // 데이터 영역
@@ -106,30 +116,38 @@ void print_queue(char* msg)
 	printf("%s[%2d] = ", msg, size());
 
 	for (p = front; p != NULL; p = p->link)
-		printf("%2d ", p->data);
+		printf("\n\t%-15d %-10s %-20s ", p->data.id, p->data.name, p->data.dept);
 
 	printf("\n");
+
+}
+
+Student get_student(int id, char* name, char* dept)
+{
+
+	Student s;
+	s.id = id;
+	strcpy(s.name, name);
+	strcpy(s.dept, dept);
+
+	return s;
 
 }
 
 void main()
 {
 
-	int i;
-
 	init_queue();
 
-	for (i = 1; i < 10; i++)
-		enqueue(i);
+	enqueue(get_student(2018130007, "홍길동", "컴퓨터공학과"));
+	enqueue(get_student(2018130100, "이순신", "기계공학과"));
+	enqueue(get_student(2018130135, "김연아", "체육과"));
+	enqueue(get_student(2018130135, "황희", "법학과"));
 
-	print_queue("연결된 큐 enqueue 9회");
-	printf("\tdequeue() --> %d\n", dequeue());
-	printf("\tdequeue() --> %d\n", dequeue());
-	printf("\tdequeue() --> %d\n", dequeue());
-	print_queue("연결된 큐 dequeue  3회");
-
+	print_queue("연결된 학생 큐(4명 삽입)");
+	dequeue();
+	print_queue("연결된 학생 큐(1명 삭제)");
 	destroy_queue();
 
-	print_queue("연결된 큐 destroy ");
 
 }

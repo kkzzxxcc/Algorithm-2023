@@ -94,7 +94,7 @@ void insert_customer(int arrivalTime)
 	a.tService = (int)(tMaxService * rand0t01()) + 1;
 
 	printf("  고객 %d 방문 (서비스 시간 : %d분) \n", a.id, a.tService);
-	enqueue(&a, a);
+	enqueue(&, a);
 
 }
 
