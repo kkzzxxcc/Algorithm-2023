@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="구조체 연습.c">
+    <ClCompile Include="..\..\..\Desktop\과제\합병.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
