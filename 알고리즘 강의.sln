@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "알고리즘 강의 2", "�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "퀵정렬 알고리즘", "퀵정렬 알고리즘\퀵정렬 알고리즘.vcxproj", "{4F07E4EF-7E6F-4BA6-8FF8-8B84895DE8D9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "포인터실습 트리만들기", "포인터실습\포인터실습.vcxproj", "{A30B7E22-A825-4740-9649-C9D74C998CCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|arm64 = Debug|arm64
@@ -83,6 +85,18 @@ Global
 		{4F07E4EF-7E6F-4BA6-8FF8-8B84895DE8D9}.Release|x64.Build.0 = Release|x64
 		{4F07E4EF-7E6F-4BA6-8FF8-8B84895DE8D9}.Release|x86.ActiveCfg = Release|Win32
 		{4F07E4EF-7E6F-4BA6-8FF8-8B84895DE8D9}.Release|x86.Build.0 = Release|Win32
+		{A30B7E22-A825-4740-9649-C9D74C998CCD}.Debug|arm64.ActiveCfg = Debug|arm64
+		{A30B7E22-A825-4740-9649-C9D74C998CCD}.Debug|arm64.Build.0 = Debug|arm64
+		{A30B7E22-A825-4740-9649-C9D74C998CCD}.Debug|x64.ActiveCfg = Debug|x64
+		{A30B7E22-A825-4740-9649-C9D74C998CCD}.Debug|x64.Build.0 = Debug|x64
+		{A30B7E22-A825-4740-9649-C9D74C998CCD}.Debug|x86.ActiveCfg = Debug|Win32
+		{A30B7E22-A825-4740-9649-C9D74C998CCD}.Debug|x86.Build.0 = Debug|Win32
+		{A30B7E22-A825-4740-9649-C9D74C998CCD}.Release|arm64.ActiveCfg = Release|arm64
+		{A30B7E22-A825-4740-9649-C9D74C998CCD}.Release|arm64.Build.0 = Release|arm64
+		{A30B7E22-A825-4740-9649-C9D74C998CCD}.Release|x64.ActiveCfg = Release|x64
+		{A30B7E22-A825-4740-9649-C9D74C998CCD}.Release|x64.Build.0 = Release|x64
+		{A30B7E22-A825-4740-9649-C9D74C998CCD}.Release|x86.ActiveCfg = Release|Win32
+		{A30B7E22-A825-4740-9649-C9D74C998CCD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

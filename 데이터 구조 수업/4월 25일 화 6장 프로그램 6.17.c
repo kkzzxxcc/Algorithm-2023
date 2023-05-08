@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define MAX_CHAR_PER_LINE 1000
 
@@ -166,12 +167,13 @@ void main()
 	int pos;
 	Line line;
 	FILE* fp;
+	char search_str[MAX_CHAR_PER_LINE]; // 검색할 단어를 저장할 문자열 변수
 
 	init_list();
 
 	do
 	{
-		printf("[메뉴 선택] i - 입력, d - 삭제, r - 변경, p - 출력, l - 파일 읽기, s - 저장, q - 종료 => ");
+		printf("[메뉴 선택] i - 입력, d - 삭제, r - 변경,f - 검색,  p - 출력, l - 파일 읽기, s - 저장, q - 종료 => ");
 		command = getchar();
 
 		switch (command)
@@ -207,6 +209,24 @@ void main()
 
 			break;
 
+		case 'f':
+
+			printf("  검색할 단어 : ");
+			my_fflush();
+			fgets(search_str, MAX_CHAR_PER_LINE, stdin);
+			search_str[strcspn(search_str, "\n")] = 0; // fgets로 입력받은 문자열 끝에 있는 '\n'을 제거
+
+			Node* p;
+			int i = 0;
+			for (p = head; p != NULL; p = p->link, i++) 
+			{
+				if (strstr(p->data.str, search_str) != NULL) 
+				{
+					fprintf(stderr, "%3d: %s", i, p->data.str);
+				}
+			}
+			break;
+
 		case 'l':
 
 			fp = fopen("Test.txt", "r");
@@ -214,7 +234,7 @@ void main()
 			if (fp != NULL)
 			{
 				while (fgets(line.str, MAX_CHAR_PER_LINE, fp))
-					insert(size(), line);
+				insert(size(), line);
 
 				fclose(fp);
 			}
@@ -231,7 +251,7 @@ void main()
 				fclose(fp);
 			}
 
-		case 'p':
+		case 'p': 
 			display(stdout);
 
 		}
