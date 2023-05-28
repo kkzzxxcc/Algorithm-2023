@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="가짜 동전을 찾는 알고리즘.c">
+    <ClCompile Include="쪽지시험 배낭문제.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
