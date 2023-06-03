@@ -5,28 +5,83 @@
 // 5월 23일 알고리즘
 
 #include <stdio.h>
-#include <conio.h>
+#include <stdlib.h>
 #include <Windows.h>
+
+#define P 38
+#define PP P+21
+// ┫ ┃ ━ ┓ ┛ ┗ ┏ ┳ ┻ ┣ ╋
 
 void gotoxy(int x, int y);
 
 int main(void)
 {
-	system("cls");
+	int i;
 
-	gotoxy(4, 4);
-
-	putchar('A');
+	for (i = 0; i < 120; i++)
+		printf("━");
+	for (i = 0; i < 28; i++)
+		printf("┃\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t┃\n");
+	for (i = 0; i < 120; i++)
+		printf("━");
+	gotoxy(1, 8);
+	for (i = 0; i < 120; i++)
+		printf("━");
 
 	gotoxy(1, 1);
+	printf("┏");
+	gotoxy(120, 1);
+	printf("┓");
+	gotoxy(1, 8);
+	printf("┣");
+	gotoxy(120, 8);
+	printf("┫");
+	gotoxy(1, 30);
+	printf("┗");
+	gotoxy(120, 30);
+	printf("┛");
 
-	printf("□"); //유티코드 : HWP 특수문자 Ctrl+F10 하여 문자표에서 붙여넣기
+	// ㄴ
+	gotoxy(12, 3);
+	printf("**      *  *       *  *********  *********      *      *********  *********  *********  **      * \n");
+	gotoxy(12, 4);
+	printf("* *     *   *     *       *      *             * *         *          *      *       *  * *     * \n");
+	gotoxy(12, 5);
+	printf("*   *   *    *   *        *      *   *****    *****        *          *      *       *  *   *   * \n");
+	gotoxy(12, 6);
+	printf("*     * *     * *         *      *      **   *     *       *          *      *       *  *     * * \n");
+	gotoxy(12, 7);
+	printf("*      **      *      *********  *********  *       *      *      *********  *********  *      ** \n");
+	gotoxy(12, 8);
+	
+
+
+	gotoxy(10, 15);
+	printf("1. 길찾기");
+	gotoxy(10, 18);
+	printf("2. 최근기록");
+	gotoxy(10, 21);
+	printf("3. 즐겨찾기");
+	gotoxy(10, 24);
+	printf("4. 종료");
+
+
+
+	gotoxy(90, 29);
+	printf("PG ver. B202305301752");
+
+
+	gotoxy(3, 2);
+	printf("UI S/N: U 0.1");
+	gotoxy(2, 29);
+	printf("원하시는 메뉴 번호를 입력하세요>>> ");
+	_getch();
 
 	return 0;
 }
 
 void gotoxy(int x, int y)
 {
-	COORD pos = { x,y };
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+	COORD Pos = { x - 1, y - 1 };
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Pos);
 }

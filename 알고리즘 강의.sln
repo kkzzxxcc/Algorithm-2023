@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TUI 실습", "TUI 실습\TU
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "허프만", "허프만\허프만.vcxproj", "{4422A042-67F3-425E-AFE2-592E11D45CA7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UI", "UI\UI.vcxproj", "{C78AEA9A-6AD0-44A6-A181-0B20A29E5665}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|arm64 = Debug|arm64
@@ -125,6 +127,18 @@ Global
 		{4422A042-67F3-425E-AFE2-592E11D45CA7}.Release|x64.Build.0 = Release|x64
 		{4422A042-67F3-425E-AFE2-592E11D45CA7}.Release|x86.ActiveCfg = Release|Win32
 		{4422A042-67F3-425E-AFE2-592E11D45CA7}.Release|x86.Build.0 = Release|Win32
+		{C78AEA9A-6AD0-44A6-A181-0B20A29E5665}.Debug|arm64.ActiveCfg = Debug|x64
+		{C78AEA9A-6AD0-44A6-A181-0B20A29E5665}.Debug|arm64.Build.0 = Debug|x64
+		{C78AEA9A-6AD0-44A6-A181-0B20A29E5665}.Debug|x64.ActiveCfg = Debug|x64
+		{C78AEA9A-6AD0-44A6-A181-0B20A29E5665}.Debug|x64.Build.0 = Debug|x64
+		{C78AEA9A-6AD0-44A6-A181-0B20A29E5665}.Debug|x86.ActiveCfg = Debug|Win32
+		{C78AEA9A-6AD0-44A6-A181-0B20A29E5665}.Debug|x86.Build.0 = Debug|Win32
+		{C78AEA9A-6AD0-44A6-A181-0B20A29E5665}.Release|arm64.ActiveCfg = Release|x64
+		{C78AEA9A-6AD0-44A6-A181-0B20A29E5665}.Release|arm64.Build.0 = Release|x64
+		{C78AEA9A-6AD0-44A6-A181-0B20A29E5665}.Release|x64.ActiveCfg = Release|x64
+		{C78AEA9A-6AD0-44A6-A181-0B20A29E5665}.Release|x64.Build.0 = Release|x64
+		{C78AEA9A-6AD0-44A6-A181-0B20A29E5665}.Release|x86.ActiveCfg = Release|Win32
+		{C78AEA9A-6AD0-44A6-A181-0B20A29E5665}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
